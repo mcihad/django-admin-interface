@@ -27,6 +27,7 @@ classifiers = [
     "Framework :: Django :: 4.2",
     "Framework :: Django :: 5.0",
     "Framework :: Django :: 5.1",
+    "Framework :: Django :: 5.2",
     "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
     "Natural Language :: English",
@@ -64,11 +65,13 @@ Funding = "https://github.com/sponsors/fabiocaccamo/"
 Twitter = "https://twitter.com/fabiocaccamo"
 
 [tool.ruff]
-ignore = []
 line-length = 88
+
+[tool.ruff.lint]
+ignore = []
 select = ["B", "B9", "C", "E", "F", "I", "W"]
 
-[tool.ruff.mccabe]
+[tool.ruff.lint.mccabe]
 max-complexity = 10
 
 [tool.setuptools.packages.find]
